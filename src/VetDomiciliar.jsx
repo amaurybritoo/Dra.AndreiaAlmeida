@@ -54,7 +54,7 @@ export default function VetDomiciliar() {
     {/* IMAGEM À ESQUERDA */}
     <div className="about-image">
       <img
-        src="/moi-perfil.png"
+        src="https://i.imgur.com/hLzUgId.png"
         alt="Veterinária com cachorro"
       />
     </div>
