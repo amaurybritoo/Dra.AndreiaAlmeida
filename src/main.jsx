@@ -4,7 +4,15 @@ import './index.css'
 import App from './App.jsx'
 
 
+import FotoAndreia from './assets/moi-perfil.png';
 
+function Sobre() {
+  return (
+    <div>
+      <img src={FotoAndreia} alt="Dra. Andréia Almeida" />
+    </div>
+  );
+}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
