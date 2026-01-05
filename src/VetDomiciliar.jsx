@@ -127,6 +127,16 @@ export default function VetDomiciliar() {
       </div>
     </div>
     
+    <div className="review-card">
+  <p>
+    "Atendimento impecável! A Dra. Andréia explicou tudo com muita clareza e cuidou do meu pet com um carinho enorme."
+  </p>
+  <div className="review-author">
+    <span>– Yasmin T.</span>
+    <div className="stars">⭐⭐⭐⭐⭐</div>
+  </div>
+</div>
+
 
     <div className="review-card">
       <p>
