@@ -34,7 +34,7 @@ export default function VetDomiciliar() {
       <section className="hero">
         <h1>Cuidado veterinário no conforto da sua casa</h1>
         <p>
-          Atendimento domiciliar para pequenos animais com carinho,
+          Atendimento domiciliar em manaus para pequenos animais com carinho,
           segurança e profissionalismo.
         </p>
         <a
