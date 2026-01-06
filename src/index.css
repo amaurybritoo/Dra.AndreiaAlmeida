@@ -12,16 +12,6 @@
   --card: #f3f4f6;
 }
 
-/* DARK MODE AUTOMÁTICO */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f172a;
-    --text: #e5e7eb;
-    --primary: #4ade80;
-    --secondary: #22c55e;
-    --card: #1e293b;
-  }
-}
 
 body {
  body {
