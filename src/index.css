@@ -7,20 +7,18 @@
 :root {
   --bg: #ffffff;
   --text: #1f2937;
-  --primary: #16a34a;
+  --primary: var(--primary);
   --secondary: #22c55e;
   --card: #f3f4f6;
 }
 
 
 body {
- body {
   background: var(--bg);
-  color: var(--text);
+  color: var(--text-main);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-}
 
 section {
   padding: 64px 24px;
@@ -83,12 +81,19 @@ section {
   text-align: center;
 }
 
-.card {
+.card,
+.review-card {
   background: var(--card);
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
+
+.review-card p {
+  color: var(--text-muted);
+}
+
 
 .card:hover {
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
@@ -456,7 +461,7 @@ footer {
 .appointment-form button {
   width: 100%;
   padding: 16px;
-  background: #2ecc71;
+  background: var(--primary);
   color: white;
   font-size: 16px;
   border: none;
@@ -466,7 +471,7 @@ footer {
 }
 
 .appointment-form button:hover {
-  background: #27ae60;
+  background: var(--primary);
   transform: translateY(-2px);
 }
 
@@ -562,7 +567,7 @@ footer {
 .appointment-form button {
   width: 100%;
   padding: 16px;
-  background: #2ecc71;
+  background: var(--primary);
   color: white;
   font-size: 16px;
   border: none;
@@ -572,7 +577,7 @@ footer {
 }
 
 .appointment-form button:hover {
-  background: #27ae60;
+  background: var(--primary);
   transform: translateY(-2px);
 }
 
@@ -1072,3 +1077,16 @@ h3 {
     margin-bottom: 3rem;
   }
 }
+
+.button-primary {
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 500;
+}
+
+.button-primary:hover {
+  filter: brightness(0.95);
+}
+

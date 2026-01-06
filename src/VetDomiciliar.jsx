@@ -17,7 +17,7 @@ export default function VetDomiciliar() {
   const [tutor, setTutor] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [petName, setPetName] = useState("");
-  const [petType, setPetType] = useState("Cão");
+  const [petType, setPetType] = useState("🐾");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {

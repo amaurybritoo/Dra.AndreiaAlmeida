@@ -1,0 +1,84 @@
+/* =========================
+   🌿 PALETA BASE (NEUTRA)
+========================= */
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --card: #ffffff;
+
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+
+  --primary: #4ade80;
+  --primary-soft: #dcfce7;
+
+  --border: #e2e8f0;
+  --shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================
+   🔵 PALETA AZUL CUIDADO
+========================= */
+/*
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --card: #ffffff;
+
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+
+  --primary: #60a5fa;
+  --primary-soft: #e0f2fe;
+
+  --border: #e2e8f0;
+  --shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+*/
+
+/* =========================
+   🟣 PALETA LILÁS PREMIUM
+========================= */
+/*
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --card: #ffffff;
+
+  --text-main: #1e1b4b;
+  --text-muted: #6b7280;
+
+  --primary: #c4b5fd;
+  --primary-soft: #f5f3ff;
+
+  --border: #e5e7eb;
+  --shadow: 0 8px 25px rgba(30, 27, 75, 0.06);
+}
+*/
+
+/* =========================
+   🟠 PALETA PÊSSEGO SUAVE
+========================= */
+/*
+:root {
+  --primary: #f4b7a6;
+  --primary-hover: #eaa08c;
+  --primary-soft: #fde7df;
+
+  --accent: #f7c6b8;
+
+  --bg: #ffffff;
+  --bg-section: #fff6f2;
+  --bg-soft: #fdf2ed;
+
+  --card: #ffffff;
+
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+
+  --border: #f1d3ca;
+
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+*/
