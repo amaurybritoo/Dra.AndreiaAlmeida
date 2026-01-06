@@ -4,10 +4,32 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #ffffff;
+  --text: #1f2937;
+  --primary: #16a34a;
+  --secondary: #22c55e;
+  --card: #f3f4f6;
+}
+
+/* DARK MODE AUTOMÁTICO */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --primary: #4ade80;
+    --secondary: #22c55e;
+    --card: #1e293b;
+  }
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333;
-  background: #fff;
+ body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 }
 
 section {
@@ -38,8 +60,8 @@ section {
 
 .btn {
   display: inline-block;
-  background: #2ecc71;
-  color: white;
+  background: var(--primary);
+  color: #fff;
   padding: 14px 28px;
   border-radius: 16px;
   text-decoration: none;
@@ -72,7 +94,7 @@ section {
 }
 
 .card {
-  background: #fff;
+  background: var(--card);
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -1002,7 +1024,7 @@ h3 {
 /* CARD */
 .review-card {
   flex: 0 0 320px;
-  background-color: #ffffff;
+   background: var(--card);
   padding: 2.2rem;
   border-radius: 25px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
