@@ -82,7 +82,7 @@ export default function VetDomiciliar() {
     <>
       {/* HERO */}
       <section className="hero">
-        <img src="https://i.imgur.com/oo0cOXU.png" alt="Logo Andreia Veterinária" className="hero-logo" />
+        <img src="/logo.png" alt="Logo Andreia Veterinária" className="hero-logo" />
         <h1>Cuidado veterinário no conforto da sua casa</h1>
         <p>
           Atendimento domiciliar em manaus para pequenos animais com carinho,
@@ -114,7 +114,7 @@ export default function VetDomiciliar() {
     <div className="about-text">
       <h2>Conheça a Dra. Andréia Almeida</h2>
       <p>
-        Desde a infância, a Dra. Andréia é movida pelo amor aos animais — e foi essa paixão que se transformou em propósito profissional. 
+        Desde a infância, a Dra. Andréia é movida pelo amor aos animais e foi essa paixão que se transformou em propósito profissional. 
 Oferece atendimento veterinário domiciliar humanizado, proporcionando mais conforto aos pets e mais tranquilidade aos responsáveis, no ambiente seguro do próprio lar.
 Com experiência em clínica médica de cães e gatos, prioriza a saúde, o bem-estar e a individualidade de cada paciente, sempre com atenção personalizada, responsabilidade e ética profissional.
 Seu compromisso é transformar cada consulta em uma experiência positiva, leve e acolhedora, promovendo cuidado de qualidade e fortalecendo o vínculo entre responsável e pet.
