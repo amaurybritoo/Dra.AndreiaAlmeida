@@ -99,7 +99,7 @@ export default function VetDomiciliar() {
   
   <div className="container gallery-grid">
     <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Consulta veterinária domiciliar" />
+      <img src="https://imgur.com/gallery/saul-e-raul-ETWgGvw" alt="Consulta veterinária domiciliar" />
       <div className="gallery-overlay">
         <h4>Consulta Clínica</h4>
         <p>Atendimento personalizado no conforto do lar</p>
