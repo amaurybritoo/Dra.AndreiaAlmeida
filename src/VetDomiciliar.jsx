@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 
 export default function VetDomiciliar() {
@@ -51,85 +51,61 @@ export default function VetDomiciliar() {
       <section>
   <div className="container grid-2 about">
 
+    {/* IMAGEM À ESQUERDA */}
+    <div className="about-image">
+      <img
+        src="https://i.imgur.com/hLzUgId.png"
+        alt="Veterinária com cachorro"
+      />
+    </div>
+
+    {/* TEXTO À DIREITA */}
+    <div className="about-text">
+      <h2>Conheça a Dra. Andréia Almeida</h2>
+      <p>
+        Médica Veterinária apaixonada por pequenos animais, oferecendo atendimento domiciliar humanizado que garante conforto aos pets e tranquilidade aos tutores.<br/>
+
+  Com experiência em emergências, clínica diária, microchipagem e vacinação, ela prioriza a saúde e o bem-estar de cada animal, sempre com atenção personalizada e ética profissional.<br/>
+
+  Seu objetivo é transformar cada consulta em uma experiência positiva, fortalecendo o vínculo entre tutor e pet e promovendo cuidado de qualidade.<br/>
+
+  Dra. Andréia valoriza a prevenção e a educação dos tutores, ajudando-os a compreender melhor as necessidades dos seus pets.<br/>
+
+  Seu atendimento é pautado na empatia, respeito e compromisso com cada animal, garantindo que todos recebam o melhor cuidado possível.<br/>
+
+  Sempre em busca de atualização e aprimoramento profissional, ela combina conhecimento técnico com sensibilidade, oferecendo soluções seguras e eficazes para cada situação.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+      {/* SERVIÇOS */}
+      <section className="light">
+        <h2 className="section-title">Serviços</h2>
+        <div className="container grid-3">
+          {servicos.map((s) => (
+            <div className="card" key={s}>
+              <span>{s}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* GALERIA DE ATENDIMENTOS */}
 <section className="light">
   <h2 className="section-title">Nossos Atendimentos</h2>
   <p className="gallery-subtitle">Conheça alguns dos atendimentos realizados com carinho e profissionalismo</p>
-
-  <div className="gallery-full">
-    <button
-      className="carousel-btn prev"
-      onClick={() => {
-        const el = carouselRef.current;
-        if (el) el.scrollBy({ left: -Math.round(el.clientWidth * 0.8), behavior: 'smooth' });
-      }}
-      aria-label="Anterior"
-    >
-      ‹
-    </button>
-
-    <div className="gallery-carousel" ref={carouselRef}>
-      <div className="gallery-item">
-        <img src="https://images.unsplash.com/photo-1612536315141-bc891c93f5a7?w=500&h=400&fit=crop" alt="Consulta veterinária domiciliar" />
-        <div className="gallery-overlay">
-          <h4>Consulta Clínica</h4>
-          <p>Atendimento personalizado no conforto do lar</p>
-        </div>
-      </div>
-
-      <div className="gallery-item">
-        <img src="https://images.unsplash.com/photo-1584308666744-24d5f15714ae?w=500&h=400&fit=crop" alt="Vacinação de pet" />
-        <div className="gallery-overlay">
-          <h4>Vacinação</h4>
-          <p>Proteção completa para seu pet</p>
-        </div>
-      </div>
-
-      <div className="gallery-item">
-        <img src="https://images.unsplash.com/photo-1537789879091-1d234db4b05f?w=500&h=400&fit=crop" alt="Cuidado veterinário geriátrico" />
-        <div className="gallery-overlay">
-          <h4>Cuidados Geriátricos</h4>
-          <p>Atenção especial para pets seniors</p>
-        </div>
-      </div>
-
-      <div className="gallery-item">
-        <img src="https://images.unsplash.com/photo-1608848461950-0fed8e5a0e19?w=500&h=400&fit=crop" alt="Acompanhamento de filhotes" />
-        <div className="gallery-overlay">
-          <h4>Filhotes</h4>
-          <p>Acompanhamento completo desde o início</p>
-        </div>
-      </div>
-
-      <div className="gallery-item">
-        <img src="https://images.unsplash.com/photo-1583511655857-d19db992cb74?w=500&h=400&fit=crop" alt="Coleta de exames" />
-        <div className="gallery-overlay">
-          <h4>Coleta de Exames</h4>
-          <p>Diagnóstico rápido e preciso</p>
-        </div>
-      </div>
-
-      <div className="gallery-item">
-        <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Curativo e medicação" />
-        <div className="gallery-overlay">
-          <h4>Curativos e Medicação</h4>
-          <p>Tratamento completo com eficiência</p>
-        </div>
+  
+  <div className="container gallery-grid">
+    <div className="gallery-item">
+      <img src="https://imgur.com/gallery/saul-e-raul-ETWgGvw.png" alt="Consulta veterinária domiciliar" />
+      <div className="gallery-overlay">
+        <h4>Consulta Clínica</h4>
+        <p>Atendimento personalizado no conforto do lar</p>
       </div>
     </div>
 
-    <button
-      className="carousel-btn next"
-      onClick={() => {
-        const el = carouselRef.current;
-        if (el) el.scrollBy({ left: Math.round(el.clientWidth * 0.8), behavior: 'smooth' });
-      }}
-      aria-label="Próximo"
-    >
-      ›
-    </button>
-  </div>
-</section>
     <div className="gallery-item">
       <img src="https://images.unsplash.com/photo-1584308666744-24d5f15714ae?w=500&h=400&fit=crop" alt="Vacinação de pet" />
       <div className="gallery-overlay">
