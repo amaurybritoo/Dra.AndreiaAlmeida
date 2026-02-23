@@ -1,19 +1,19 @@
 /* =========================
-   🌿 PALETA BASE (NEUTRA)
+   🟣 PALETA ROXO PREMIUM
 ========================= */
 :root {
-  --bg: #f8fafc;
+  --bg: #faf8ff;
   --surface: #ffffff;
   --card: #ffffff;
 
-  --text-main: #0f172a;
-  --text-muted: #64748b;
+  --text-main: #3f0f63;
+  --text-muted: #7c5b99;
 
-  --primary: #4ade80;
-  --primary-soft: #dcfce7;
+  --primary: #7c3aed;
+  --primary-soft: #f3e8ff;
 
-  --border: #e2e8f0;
-  --shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+  --border: #e9d5ff;
+  --shadow: 0 8px 25px rgba(124, 58, 237, 0.1);
 }
 
 
