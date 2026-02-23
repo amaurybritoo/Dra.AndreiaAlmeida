@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import { useState, useEffect, useRef } from "react";
 
 export default function VetDomiciliar() {
   const servicos = [
@@ -19,6 +18,50 @@ export default function VetDomiciliar() {
   const [petName, setPetName] = useState("");
   const [petType, setPetType] = useState(" ");
   const [message, setMessage] = useState("");
+  
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const container = carouselRef.current || document;
+    const selector = '.gallery-item';
+    const items = Array.from(container.querySelectorAll(selector));
+    if (!items.length) return;
+
+    const adjustItem = (item) => {
+      const img = item.querySelector('img');
+      if (!img) return;
+      const aspect = (img.naturalWidth && img.naturalHeight) ? (img.naturalWidth / img.naturalHeight) : 1;
+      const computed = getComputedStyle(item);
+      const itemHeight = parseFloat(computed.height) || 320;
+      const width = Math.max(140, Math.round(itemHeight * aspect));
+      item.style.flex = `0 0 ${width}px`;
+    };
+
+    items.forEach((item) => {
+      const img = item.querySelector('img');
+      if (!img) return;
+      const onLoad = () => adjustItem(item);
+      if (img.complete) {
+        adjustItem(item);
+      } else {
+        img.addEventListener('load', onLoad);
+        item._onLoad = onLoad;
+      }
+    });
+
+    const onResize = () => items.forEach(adjustItem);
+    window.addEventListener('resize', onResize);
+
+    return () => {
+      items.forEach((item) => {
+        const img = item.querySelector('img');
+        if (img && item._onLoad) img.removeEventListener('load', item._onLoad);
+        delete item._onLoad;
+        item.style.flex = '';
+      });
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +70,8 @@ export default function VetDomiciliar() {
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
+
+  
 
   return (
     <>
@@ -97,52 +142,56 @@ export default function VetDomiciliar() {
   <h2 className="section-title">Nossos Atendimentos</h2>
   <p className="gallery-subtitle">Conheça alguns dos atendimentos realizados com carinho e profissionalismo</p>
   
-  <div className="container gallery-grid">
-    <div className="gallery-item">
-      <img src="https://imgur.com/gallery/saul-e-raul-ETWgGvw.png" alt="Consulta veterinária domiciliar" />
-      <div className="gallery-overlay">
-        <h4>Consulta Clínica</h4>
-        <p>Atendimento personalizado no conforto do lar</p>
-      </div>
-    </div>
+  <div className="gallery-full">
+    <div className="container">
+      <div className="gallery-carousel" ref={carouselRef}>
+        <div className="gallery-item">
+          <img src="https://i.imgur.com/p2K7nPA.jpeg" alt="Consulta veterinária domiciliar" />
+          <div className="gallery-overlay">
+            <h4>Consulta Clínica</h4>
+            <p>Atendimento personalizado no conforto do lar</p>
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1584308666744-24d5f15714ae?w=500&h=400&fit=crop" alt="Vacinação de pet" />
-      <div className="gallery-overlay">
-        <h4>Vacinação</h4>
-        <p>Proteção completa para seu pet</p>
-      </div>
-    </div>
+        <div className="gallery-item">
+          <img src="https://i.imgur.com/aTnIeEY.jpeg" alt="Vacinação de pet" />
+          <div className="gallery-overlay">
+            <h4>Vacinação</h4>
+            <p>Proteção completa para seu pet</p>
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1537789879091-1d234db4b05f?w=500&h=400&fit=crop" alt="Cuidado veterinário geriátrico" />
-      <div className="gallery-overlay">
-        <h4>Cuidados Geriátricos</h4>
-        <p>Atenção especial para pets seniors</p>
-      </div>
-    </div>
+        <div className="gallery-item">
+          <img src="https://i.imgur.com/FxMqeF9.jpeg" alt="Cuidado veterinário geriátrico" />
+          <div className="gallery-overlay">
+            <h4>Cuidados Geriátricos</h4>
+            <p>Atenção especial para pets seniors</p>
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1608848461950-0fed8e5a0e19?w=500&h=400&fit=crop" alt="Acompanhamento de filhotes" />
-      <div className="gallery-overlay">
-        <h4>Filhotes</h4>
-        <p>Acompanhamento completo desde o início</p>
-      </div>
-    </div>
+        <div className="gallery-item">
+          <img src="https://i.imgur.com/2adEnsn.png" alt="Acompanhamento de filhotes" />
+          <div className="gallery-overlay">
+            <h4>Filhotes</h4>
+            <p>Acompanhamento completo desde o início</p>
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1583511655857-d19db992cb74?w=500&h=400&fit=crop" alt="Coleta de exames" />
-      <div className="gallery-overlay">
-        <h4>Coleta de Exames</h4>
-        <p>Diagnóstico rápido e preciso</p>
-      </div>
-    </div>
+        <div className="gallery-item">
+          <img src="https://i.imgur.com/9TRO0VU.png" alt="Coleta de exames" />
+          <div className="gallery-overlay">
+            <h4>Coleta de Exames</h4>
+            <p>Diagnóstico rápido e preciso</p>
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Curativo e medicação" />
-      <div className="gallery-overlay">
-        <h4>Curativos e Medicação</h4>
-        <p>Tratamento completo com eficiência</p>
+        <div className="gallery-item">
+          <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Curativo e medicação" />
+          <div className="gallery-overlay">
+            <h4>Curativos e Medicação</h4>
+            <p>Tratamento completo com eficiência</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
