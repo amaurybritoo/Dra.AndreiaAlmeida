@@ -17,13 +17,13 @@ export default function VetDomiciliar() {
   const [tutor, setTutor] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [petName, setPetName] = useState("");
-  const [petType, setPetType] = useState("Cão");
+  const [petType, setPetType] = useState(" ");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phone = "559288255935";
-    const text = `Olá, meu nome é ${tutor || "não informado"}. Gostaria de solicitar um orçamento para ${petName || "meu pet"} (${petType || "não informado"}).\n\nDescrição: ${message || "nenhuma"}\n\nContato: ${whatsapp || "não informado"}`;
+    const phone = "559288255935"; // altere para o número desejado
+    const text = `Olá, meu nome é ${tutor || ""}. Gostaria de solicitar um orçamento para ${petName || "meu pet"} (${petType}).\n\n${message || ""}\n\nContato: ${whatsapp || ""}`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
@@ -99,7 +99,7 @@ export default function VetDomiciliar() {
   
   <div className="container gallery-grid">
     <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1612536315141-bc891c93f5a7?w=500&h=400&fit=crop" alt="Consulta veterinária domiciliar" />
+      <img src="https://imgur.com/gallery/saul-e-raul-ETWgGvw.png" alt="Consulta veterinária domiciliar" />
       <div className="gallery-overlay">
         <h4>Consulta Clínica</h4>
         <p>Atendimento personalizado no conforto do lar</p>
