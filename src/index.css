@@ -655,12 +655,12 @@ button:hover {
   right: 24px;
   width: 64px;
   height: 64px;
-  background: #7c3aed;
+  background: #3aed70;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 28px rgba(124, 58, 237, 0.35);
+  box-shadow: 0 10px 28px rgba(83, 235, 69, 0.35);
   z-index: 999999;
   text-decoration: none;
   animation: pulse 1.8s infinite;
