@@ -10,7 +10,7 @@ export default function VetDomiciliar() {
     "Curativos",
     "Administração de medicamentos",
     "Orientação nutricional",
-    "Cuidados paliativos",
+    "Microchipagem",
     "Acompanhamento de filhotes"
   ];
 
@@ -22,7 +22,7 @@ export default function VetDomiciliar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phone = "5592981737451"; // altere para o número desejado
+    const phone = "559288255935"; // altere para o número desejado
     const text = `Olá, meu nome é ${tutor || ""}. Gostaria de solicitar um orçamento para ${petName || "meu pet"} (${petType}).\n\n${message || ""}\n\nContato: ${whatsapp || ""}`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
@@ -39,7 +39,7 @@ export default function VetDomiciliar() {
         </p>
         <a
           className="btn"
-          href="https://wa.me/5592999999999"
+          href="https://wa.me/559288255935"
           target="_blank"
           rel="noreferrer"
         >
@@ -91,6 +91,62 @@ export default function VetDomiciliar() {
           ))}
         </div>
       </section>
+
+      {/* GALERIA DE ATENDIMENTOS */}
+<section className="light">
+  <h2 className="section-title">Nossos Atendimentos</h2>
+  <p className="gallery-subtitle">Conheça alguns dos atendimentos realizados com carinho e profissionalismo</p>
+  
+  <div className="container gallery-grid">
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1612536315141-bc891c93f5a7?w=500&h=400&fit=crop" alt="Consulta veterinária domiciliar" />
+      <div className="gallery-overlay">
+        <h4>Consulta Clínica</h4>
+        <p>Atendimento personalizado no conforto do lar</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1584308666744-24d5f15714ae?w=500&h=400&fit=crop" alt="Vacinação de pet" />
+      <div className="gallery-overlay">
+        <h4>Vacinação</h4>
+        <p>Proteção completa para seu pet</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1537789879091-1d234db4b05f?w=500&h=400&fit=crop" alt="Cuidado veterinário geriátrico" />
+      <div className="gallery-overlay">
+        <h4>Cuidados Geriátricos</h4>
+        <p>Atenção especial para pets seniors</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1608848461950-0fed8e5a0e19?w=500&h=400&fit=crop" alt="Acompanhamento de filhotes" />
+      <div className="gallery-overlay">
+        <h4>Filhotes</h4>
+        <p>Acompanhamento completo desde o início</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1583511655857-d19db992cb74?w=500&h=400&fit=crop" alt="Coleta de exames" />
+      <div className="gallery-overlay">
+        <h4>Coleta de Exames</h4>
+        <p>Diagnóstico rápido e preciso</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Curativo e medicação" />
+      <div className="gallery-overlay">
+        <h4>Curativos e Medicação</h4>
+        <p>Tratamento completo com eficiência</p>
+      </div>
+    </div>
+  </div>
+</section>      
 
       {/* AVALIAÇÕES DOS CLIENTES */}
 <section className="reviews-section">
@@ -149,64 +205,7 @@ export default function VetDomiciliar() {
     </div>
   </div>
 </section>
-
-
-      {/* GALERIA DE ATENDIMENTOS */}
-<section className="light">
-  <h2 className="section-title">Nossos Atendimentos</h2>
-  <p className="gallery-subtitle">Conheça alguns dos atendimentos realizados com carinho e profissionalismo</p>
-  
-  <div className="container gallery-grid">
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1612536315141-bc891c93f5a7?w=500&h=400&fit=crop" alt="Consulta veterinária domiciliar" />
-      <div className="gallery-overlay">
-        <h4>Consulta Clínica</h4>
-        <p>Atendimento personalizado no conforto do lar</p>
-      </div>
-    </div>
-
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1584308666744-24d5f15714ae?w=500&h=400&fit=crop" alt="Vacinação de pet" />
-      <div className="gallery-overlay">
-        <h4>Vacinação</h4>
-        <p>Proteção completa para seu pet</p>
-      </div>
-    </div>
-
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1537789879091-1d234db4b05f?w=500&h=400&fit=crop" alt="Cuidado veterinário geriátrico" />
-      <div className="gallery-overlay">
-        <h4>Cuidados Geriátricos</h4>
-        <p>Atenção especial para pets seniors</p>
-      </div>
-    </div>
-
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1608848461950-0fed8e5a0e19?w=500&h=400&fit=crop" alt="Acompanhamento de filhotes" />
-      <div className="gallery-overlay">
-        <h4>Filhotes</h4>
-        <p>Acompanhamento completo desde o início</p>
-      </div>
-    </div>
-
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1583511655857-d19db992cb74?w=500&h=400&fit=crop" alt="Coleta de exames" />
-      <div className="gallery-overlay">
-        <h4>Coleta de Exames</h4>
-        <p>Diagnóstico rápido e preciso</p>
-      </div>
-    </div>
-
-    <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Curativo e medicação" />
-      <div className="gallery-overlay">
-        <h4>Curativos e Medicação</h4>
-        <p>Tratamento completo com eficiência</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+          
      {/* AGENDAMENTO E ORÇAMENTO */}
 <section className="appointment">
   <div className="container appointment-grid">
@@ -226,6 +225,47 @@ export default function VetDomiciliar() {
         <li>✔ Conforto e segurança para o pet</li>
       </ul>
     </div>
+
+          {/* COMO FUNCIONA */}
+<section className="light">
+  <h2 className="section-title">Como funciona</h2>
+
+  <div className="container timeline">
+    <div className="timeline-line"></div>
+
+    <div className="timeline-step">
+      <div className="timeline-dot"></div>
+      <div className="timeline-card">
+        <h4>Solicitação</h4>
+        <p>Contato inicial via WhatsApp ou formulário de orçamento.</p>
+      </div>
+    </div>
+
+    <div className="timeline-step">
+      <div className="timeline-dot"></div>
+      <div className="timeline-card">
+        <h4>Contato</h4>
+        <p>Confirmamos as informações e esclarecemos dúvidas.</p>
+      </div>
+    </div>
+
+    <div className="timeline-step">
+      <div className="timeline-dot"></div>
+      <div className="timeline-card">
+        <h4>Agendamento</h4>
+        <p>Definimos data e horário conforme sua disponibilidade.</p>
+      </div>
+    </div>
+
+    <div className="timeline-step">
+      <div className="timeline-dot"></div>
+      <div className="timeline-card">
+        <h4>Atendimento</h4>
+        <p>Consulta realizada no conforto e segurança do lar do pet.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     {/* FORMULÁRIO */}
     <form className="appointment-form" onSubmit={handleSubmit}>
@@ -285,46 +325,7 @@ export default function VetDomiciliar() {
 
 
 
-      {/* COMO FUNCIONA */}
-<section className="light">
-  <h2 className="section-title">Como funciona</h2>
 
-  <div className="container timeline">
-    <div className="timeline-line"></div>
-
-    <div className="timeline-step">
-      <div className="timeline-dot"></div>
-      <div className="timeline-card">
-        <h4>Solicitação</h4>
-        <p>Contato inicial via WhatsApp ou formulário de orçamento.</p>
-      </div>
-    </div>
-
-    <div className="timeline-step">
-      <div className="timeline-dot"></div>
-      <div className="timeline-card">
-        <h4>Contato</h4>
-        <p>Confirmamos as informações e esclarecemos dúvidas.</p>
-      </div>
-    </div>
-
-    <div className="timeline-step">
-      <div className="timeline-dot"></div>
-      <div className="timeline-card">
-        <h4>Agendamento</h4>
-        <p>Definimos data e horário conforme sua disponibilidade.</p>
-      </div>
-    </div>
-
-    <div className="timeline-step">
-      <div className="timeline-dot"></div>
-      <div className="timeline-card">
-        <h4>Atendimento</h4>
-        <p>Consulta realizada no conforto e segurança do lar do pet.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -353,7 +354,7 @@ export default function VetDomiciliar() {
     </div>
 
     <a
-      href="https://wa.me/5592999999999"
+      href="https://wa.me/559288255935"
       target="_blank"
       className="contact-cta"
     >
@@ -367,7 +368,7 @@ export default function VetDomiciliar() {
 
       {/* FOOTER */}
       <footer>
-        © 2026 Atendimento Veterinário Domiciliar • CRMV XX-XXXX
+        © 2026 Atendimento Veterinário Domiciliar • CRMV/AM 02993
       </footer>
     </>
   );
