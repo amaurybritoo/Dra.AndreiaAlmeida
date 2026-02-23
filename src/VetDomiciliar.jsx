@@ -65,8 +65,13 @@ export default function VetDomiciliar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phone = "559288255935"; // altere para o número desejado
-    const text = `Olá, meu nome é ${tutor || ""}. Gostaria de solicitar um orçamento para ${petName || "meu pet"} (${petType}).\n\n${message || ""}\n\nContato: ${whatsapp || ""}`;
+    const phone = "559288255935";
+    const tutorName = tutor.trim() || "Cliente";
+    const pet = petName.trim() || "meu pet";
+    const whatsappContact = whatsapp.trim() || "Não informado";
+    const messageText = message.trim() ? `${message}` : "";
+    
+    const text = `Oi! Gostaria de solicitar um orçamento para um atendimento domiciliar.\n\nTutor(a): ${tutorName}\nPet: ${pet}\nTipo: ${petType}\nWhatsApp: ${whatsappContact} \nOBS.: ${messageText}\n\nObrigado!`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
@@ -77,7 +82,7 @@ export default function VetDomiciliar() {
     <>
       {/* HERO */}
       <section className="hero">
-        <img src="/logo.png" alt="Logo Andreia Veterinária" className="hero-logo" />
+        <img src="https://i.imgur.com/oo0cOXU.png" alt="Logo Andreia Veterinária" className="hero-logo" />
         <h1>Cuidado veterinário no conforto da sua casa</h1>
         <p>
           Atendimento domiciliar em manaus para pequenos animais com carinho,
@@ -109,17 +114,14 @@ export default function VetDomiciliar() {
     <div className="about-text">
       <h2>Conheça a Dra. Andréia Almeida</h2>
       <p>
-        Médica Veterinária apaixonada por pequenos animais, oferecendo atendimento domiciliar humanizado que garante conforto aos pets e tranquilidade aos tutores.<br/>
-
-  Com experiência em emergências, clínica diária, microchipagem e vacinação, ela prioriza a saúde e o bem-estar de cada animal, sempre com atenção personalizada e ética profissional.<br/>
-
-  Seu objetivo é transformar cada consulta em uma experiência positiva, fortalecendo o vínculo entre tutor e pet e promovendo cuidado de qualidade.<br/>
-
-  Dra. Andréia valoriza a prevenção e a educação dos tutores, ajudando-os a compreender melhor as necessidades dos seus pets.<br/>
-
-  Seu atendimento é pautado na empatia, respeito e compromisso com cada animal, garantindo que todos recebam o melhor cuidado possível.<br/>
-
-  Sempre em busca de atualização e aprimoramento profissional, ela combina conhecimento técnico com sensibilidade, oferecendo soluções seguras e eficazes para cada situação.
+        Desde a infância, a Dra. Andréia é movida pelo amor aos animais — e foi essa paixão que se transformou em propósito profissional. 
+Oferece atendimento veterinário domiciliar humanizado, proporcionando mais conforto aos pets e mais tranquilidade aos responsáveis, no ambiente seguro do próprio lar.
+Com experiência em clínica médica de cães e gatos, prioriza a saúde, o bem-estar e a individualidade de cada paciente, sempre com atenção personalizada, responsabilidade e ética profissional.
+Seu compromisso é transformar cada consulta em uma experiência positiva, leve e acolhedora, promovendo cuidado de qualidade e fortalecendo o vínculo entre responsável e pet.
+A Dra. Andréia acredita que a prevenção e a orientação são pilares fundamentais da medicina veterinária. Por isso, dedica-se também à educação dos responsáveis, ajudando-os a compreender melhor as necessidades, comportamentos e cuidados essenciais para uma vida mais saudável.
+Seu atendimento é pautado na empatia, respeito e comprometimento, unindo conhecimento técnico, atualização constante e sensibilidade para oferecer soluções seguras e eficazes em cada situação.
+Se você busca um atendimento atencioso, seguro e individualizado para o seu pet, será um prazer cuidar de quem é tão importante para você.
+Entre em contato e agende uma consulta domiciliar.
       </p>
     </div>
 
@@ -296,8 +298,9 @@ export default function VetDomiciliar() {
       <div className="form-group">
         <label>Tipo de pet</label>
         <select value={petType} onChange={(e) => setPetType(e.target.value)}>
-          <option>Cão</option>
-          <option>Gato</option>
+          <option value=" ">Selecione o tipo</option>
+          <option value="Cão">Cão</option>
+          <option value="Gato">Gato</option>
         </select>
       </div>
 
