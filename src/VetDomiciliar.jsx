@@ -405,7 +405,8 @@ Entre em contato e agende uma consulta domiciliar.
 
       <div>
         <strong>🕒 Horário</strong>
-        <span>Todos os dias · 8h às 18h</span>
+        <span>Seg - Sex · 9h às 17h</span>
+        <span>Sab · 8h às 12h</span>
       </div>
     </div>
 
