@@ -97,7 +97,7 @@ export default function VetDomiciliar() {
   <h2 className="section-title">Nossos Atendimentos</h2>
   <p className="gallery-subtitle">Conheça alguns dos atendimentos realizados com carinho e profissionalismo</p>
   
-  <div className="container gallery-grid">
+  <div className="container gallery-carousel">
     <div className="gallery-item">
       <img src="https://i.imgur.com/p2K7nPA.jpeg" alt="Consulta veterinária domiciliar" />
       <div className="gallery-overlay">
