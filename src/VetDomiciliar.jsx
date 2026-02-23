@@ -17,13 +17,13 @@ export default function VetDomiciliar() {
   const [tutor, setTutor] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [petName, setPetName] = useState("");
-  const [petType, setPetType] = useState("");
+  const [petType, setPetType] = useState("Cão");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phone = "559288255935"; // altere para o número desejado
-    const text = `Olá, meu nome é ${tutor || ""}. Gostaria de solicitar um orçamento para ${petName || "meu pet"} (${petType}).\n\n${message || ""}\n\nContato: ${whatsapp || ""}`;
+    const phone = "559288255935";
+    const text = `Olá, meu nome é ${tutor || "não informado"}. Gostaria de solicitar um orçamento para ${petName || "meu pet"} (${petType || "não informado"}).\n\nDescrição: ${message || "nenhuma"}\n\nContato: ${whatsapp || "não informado"}`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
@@ -246,8 +246,9 @@ export default function VetDomiciliar() {
       <div className="form-group">
         <label>Tipo de pet</label>
         <select value={petType} onChange={(e) => setPetType(e.target.value)}>
-          <option>Cão</option>
-          <option>Gato</option>
+          <option value="Cão">Cão</option>
+          <option value="Gato">Gato</option>
+          <option value="Outro">Outro</option>
         </select>
       </div>
 
