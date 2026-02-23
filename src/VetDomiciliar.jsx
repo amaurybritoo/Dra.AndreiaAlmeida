@@ -99,7 +99,7 @@ export default function VetDomiciliar() {
   
   <div className="container gallery-grid">
     <div className="gallery-item">
-      <img src="https://imgur.com/gallery/saul-e-raul-ETWgGvw" alt="Consulta veterinária domiciliar" />
+      <img src="https://images.unsplash.com/photo-1612536315141-bc891c93f5a7?w=500&h=400&fit=crop" alt="Consulta veterinária domiciliar" />
       <div className="gallery-overlay">
         <h4>Consulta Clínica</h4>
         <p>Atendimento personalizado no conforto do lar</p>
@@ -107,7 +107,7 @@ export default function VetDomiciliar() {
     </div>
 
     <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Vacinação de pet" />
+      <img src="https://images.unsplash.com/photo-1584308666744-24d5f15714ae?w=500&h=400&fit=crop" alt="Vacinação de pet" />
       <div className="gallery-overlay">
         <h4>Vacinação</h4>
         <p>Proteção completa para seu pet</p>
@@ -115,7 +115,7 @@ export default function VetDomiciliar() {
     </div>
 
     <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Cuidado veterinário geriátrico" />
+      <img src="https://images.unsplash.com/photo-1537789879091-1d234db4b05f?w=500&h=400&fit=crop" alt="Cuidado veterinário geriátrico" />
       <div className="gallery-overlay">
         <h4>Cuidados Geriátricos</h4>
         <p>Atenção especial para pets seniors</p>
@@ -123,7 +123,7 @@ export default function VetDomiciliar() {
     </div>
 
     <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Acompanhamento de filhotes" />
+      <img src="https://images.unsplash.com/photo-1608848461950-0fed8e5a0e19?w=500&h=400&fit=crop" alt="Acompanhamento de filhotes" />
       <div className="gallery-overlay">
         <h4>Filhotes</h4>
         <p>Acompanhamento completo desde o início</p>
@@ -131,7 +131,7 @@ export default function VetDomiciliar() {
     </div>
 
     <div className="gallery-item">
-      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Coleta de exames" />
+      <img src="https://images.unsplash.com/photo-1583511655857-d19db992cb74?w=500&h=400&fit=crop" alt="Coleta de exames" />
       <div className="gallery-overlay">
         <h4>Coleta de Exames</h4>
         <p>Diagnóstico rápido e preciso</p>
@@ -246,9 +246,8 @@ export default function VetDomiciliar() {
       <div className="form-group">
         <label>Tipo de pet</label>
         <select value={petType} onChange={(e) => setPetType(e.target.value)}>
-          <option value="Cão">Cão</option>
-          <option value="Gato">Gato</option>
-          <option value="Outro">Outro</option>
+          <option>Cão</option>
+          <option>Gato</option>
         </select>
       </div>
 
