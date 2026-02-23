@@ -20,7 +20,6 @@ export default function VetDomiciliar() {
   const [petType, setPetType] = useState(" ");
   const [message, setMessage] = useState("");
 
-  const carouselRef = useRef(null);
   const handleSubmit = (e) => {
     e.preventDefault();
     const phone = "559288255935"; // altere para o número desejado
