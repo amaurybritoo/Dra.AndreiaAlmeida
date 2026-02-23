@@ -17,7 +17,7 @@ export default function VetDomiciliar() {
   const [tutor, setTutor] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [petName, setPetName] = useState("");
-  const [petType, setPetType] = useState(" ");
+  const [petType, setPetType] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
@@ -148,63 +148,7 @@ export default function VetDomiciliar() {
   </div>
 </section>      
 
-      {/* AVALIAÇÕES DOS CLIENTES */}
-<section className="reviews-section">
-  <h2 className="section-title">O que nossos clientes dizem</h2>
 
-  <div className="reviews-carousel">
-    <div className="review-card">
-      <p>
-        "A Dra. Andréia foi incrível! Atendeu meu pet com muito cuidado e paciência. Recomendo de olhos fechados!"
-      </p>
-      <div className="review-author">
-        <span>– Mariana S.</span>
-        <div className="stars">⭐⭐⭐⭐⭐</div>
-      </div>
-    </div>
-
-    <div className="review-card">
-      <p>
-        "Excelente atendimento domiciliar! Meu cachorro ficou super tranquilo durante toda a consulta."
-      </p>
-      <div className="review-author">
-        <span>– João P.</span>
-        <div className="stars">⭐⭐⭐⭐⭐</div>
-      </div>
-    </div>
-
-    <div className="review-card">
-      <p>
-        "Profissional, atenciosa e super educada. Fiquei muito satisfeita com o cuidado da minha gatinha."
-      </p>
-      <div className="review-author">
-        <span>– Camila R.</span>
-        <div className="stars">⭐⭐⭐⭐⭐</div>
-      </div>
-    </div>
-    
-    <div className="review-card">
-  <p>
-    "Atendimento impecável! A Dra. Andréia explicou tudo com muita clareza e cuidou do meu pet com um carinho enorme."
-  </p>
-  <div className="review-author">
-    <span>– Yasmin T.</span>
-    <div className="stars">⭐⭐⭐⭐⭐</div>
-  </div>
-</div>
-
-
-    <div className="review-card">
-      <p>
-        "Super recomendo! Atendimento personalizado e muito carinho com meu pet."
-      </p>
-      <div className="review-author">
-        <span>– Lucas M.</span>
-        <div className="stars">⭐⭐⭐⭐⭐</div>
-      </div>
-    </div>
-  </div>
-</section>
 
           {/* COMO FUNCIONA */}
 <section className="light">
@@ -304,7 +248,6 @@ export default function VetDomiciliar() {
         <select value={petType} onChange={(e) => setPetType(e.target.value)}>
           <option>Cão</option>
           <option>Gato</option>
-          <option>Outro</option>
         </select>
       </div>
 
@@ -325,7 +268,63 @@ export default function VetDomiciliar() {
 
 
 
+      {/* AVALIAÇÕES DOS CLIENTES */}
+<section className="reviews-section">
+  <h2 className="section-title">O que nossos clientes dizem</h2>
 
+  <div className="reviews-carousel">
+    <div className="review-card">
+      <p>
+        "A Dra. Andréia foi incrível! Atendeu meu pet com muito cuidado e paciência. Recomendo de olhos fechados!"
+      </p>
+      <div className="review-author">
+        <span>– Mariana S.</span>
+        <div className="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div className="review-card">
+      <p>
+        "Excelente atendimento domiciliar! Meu cachorro ficou super tranquilo durante toda a consulta."
+      </p>
+      <div className="review-author">
+        <span>– João P.</span>
+        <div className="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div className="review-card">
+      <p>
+        "Profissional, atenciosa e super educada. Fiquei muito satisfeita com o cuidado da minha gatinha."
+      </p>
+      <div className="review-author">
+        <span>– Camila R.</span>
+        <div className="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+    
+    <div className="review-card">
+  <p>
+    "Atendimento impecável! A Dra. Andréia explicou tudo com muita clareza e cuidou do meu pet com um carinho enorme."
+  </p>
+  <div className="review-author">
+    <span>– Yasmin T.</span>
+    <div className="stars">⭐⭐⭐⭐⭐</div>
+  </div>
+</div>
+
+
+    <div className="review-card">
+      <p>
+        "Super recomendo! Atendimento personalizado e muito carinho com meu pet."
+      </p>
+      <div className="review-author">
+        <span>– Lucas M.</span>
+        <div className="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
