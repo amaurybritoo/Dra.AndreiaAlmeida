@@ -205,26 +205,6 @@ export default function VetDomiciliar() {
     </div>
   </div>
 </section>
-          
-     {/* AGENDAMENTO E ORÇAMENTO */}
-<section className="appointment">
-  <div className="container appointment-grid">
-
-    {/* TEXTO */}
-    <div className="appointment-info">
-      <h2>Agendamento e Orçamento</h2>
-      <p>
-        Solicite seu atendimento domiciliar de forma rápida e segura.
-        Essas informações nos ajudam a preparar um atendimento
-        personalizado para o seu pet.
-      </p>
-
-      <ul>
-        <li>✔ Atendimento humanizado</li>
-        <li>✔ Profissional qualificada</li>
-        <li>✔ Conforto e segurança para o pet</li>
-      </ul>
-    </div>
 
           {/* COMO FUNCIONA */}
 <section className="light">
@@ -266,6 +246,26 @@ export default function VetDomiciliar() {
     </div>
   </div>
 </section>
+
+     {/* AGENDAMENTO E ORÇAMENTO */}
+<section className="appointment">
+  <div className="container appointment-grid">
+
+    {/* TEXTO */}
+    <div className="appointment-info">
+      <h2>Agendamento e Orçamento</h2>
+      <p>
+        Solicite seu atendimento domiciliar de forma rápida e segura.
+        Essas informações nos ajudam a preparar um atendimento
+        personalizado para o seu pet.
+      </p>
+
+      <ul>
+        <li>✔ Atendimento humanizado</li>
+        <li>✔ Profissional qualificada</li>
+        <li>✔ Conforto e segurança para o pet</li>
+      </ul>
+    </div>
 
     {/* FORMULÁRIO */}
     <form className="appointment-form" onSubmit={handleSubmit}>
