@@ -151,6 +151,62 @@ export default function VetDomiciliar() {
 </section>
 
 
+      {/* GALERIA DE ATENDIMENTOS */}
+<section className="light">
+  <h2 className="section-title">Nossos Atendimentos</h2>
+  <p className="gallery-subtitle">Conheça alguns dos atendimentos realizados com carinho e profissionalismo</p>
+  
+  <div className="container gallery-grid">
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1612536315141-bc891c93f5a7?w=500&h=400&fit=crop" alt="Consulta veterinária domiciliar" />
+      <div className="gallery-overlay">
+        <h4>Consulta Clínica</h4>
+        <p>Atendimento personalizado no conforto do lar</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1584308666744-24d5f15714ae?w=500&h=400&fit=crop" alt="Vacinação de pet" />
+      <div className="gallery-overlay">
+        <h4>Vacinação</h4>
+        <p>Proteção completa para seu pet</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1537789879091-1d234db4b05f?w=500&h=400&fit=crop" alt="Cuidado veterinário geriátrico" />
+      <div className="gallery-overlay">
+        <h4>Cuidados Geriátricos</h4>
+        <p>Atenção especial para pets seniors</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1608848461950-0fed8e5a0e19?w=500&h=400&fit=crop" alt="Acompanhamento de filhotes" />
+      <div className="gallery-overlay">
+        <h4>Filhotes</h4>
+        <p>Acompanhamento completo desde o início</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1583511655857-d19db992cb74?w=500&h=400&fit=crop" alt="Coleta de exames" />
+      <div className="gallery-overlay">
+        <h4>Coleta de Exames</h4>
+        <p>Diagnóstico rápido e preciso</p>
+      </div>
+    </div>
+
+    <div className="gallery-item">
+      <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=500&h=400&fit=crop" alt="Curativo e medicação" />
+      <div className="gallery-overlay">
+        <h4>Curativos e Medicação</h4>
+        <p>Tratamento completo com eficiência</p>
+      </div>
+    </div>
+  </div>
+</section>
+
      {/* AGENDAMENTO E ORÇAMENTO */}
 <section className="appointment">
   <div className="container appointment-grid">
