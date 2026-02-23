@@ -138,7 +138,8 @@ export default function VetDomiciliar() {
         </div>
       </section>
 
-      {/* GALERIA DE ATENDIMENTOS */}
+      {/* GALERIA DE ATENDIMENTOS*/}
+      {/*
 <section className="light">
   <h2 className="section-title">Nossos Atendimentos</h2>
   <p className="gallery-subtitle">Conheça alguns dos atendimentos realizados com carinho e profissionalismo</p>
@@ -196,9 +197,8 @@ export default function VetDomiciliar() {
       </div>
     </div>
   </div>
-</section>      
-
-
+</section>
+      */}
 
           {/* COMO FUNCIONA */}
 <section className="light">
@@ -319,6 +319,7 @@ export default function VetDomiciliar() {
 
 
       {/* AVALIAÇÕES DOS CLIENTES */}
+      {/*
 <section className="reviews-section">
   <h2 className="section-title">O que nossos clientes dizem</h2>
 
@@ -379,7 +380,7 @@ export default function VetDomiciliar() {
   </div>
 </section>
 
-
+*/}
 
      {/* CONTATO */}
 <section className="contact">
