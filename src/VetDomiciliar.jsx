@@ -322,55 +322,58 @@ export default function VetDomiciliar() {
 <section className="reviews-section">
   <h2 className="section-title">O que nossos clientes dizem</h2>
 
-  <div className="reviews-carousel">
-    <div className="review-card">
-      <p>
-        "A Dra. Andréia foi incrível! Atendeu meu pet com muito cuidado e paciência. Recomendo de olhos fechados!"
-      </p>
-      <div className="review-author">
-        <span>– Mariana S.</span>
-        <div className="stars">⭐⭐⭐⭐⭐</div>
-      </div>
-    </div>
+  <div className="reviews-full">
+    <div className="container">
+      <div className="reviews-carousel">
+        <div className="review-card">
+          <p>
+            "A Dra. Andréia foi incrível! Atendeu meu pet com muito cuidado e paciência. Recomendo de olhos fechados!"
+          </p>
+          <div className="review-author">
+            <span>– Mariana S.</span>
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
 
-    <div className="review-card">
-      <p>
-        "Excelente atendimento domiciliar! Meu cachorro ficou super tranquilo durante toda a consulta."
-      </p>
-      <div className="review-author">
-        <span>– João P.</span>
-        <div className="stars">⭐⭐⭐⭐⭐</div>
-      </div>
-    </div>
+        <div className="review-card">
+          <p>
+            "Excelente atendimento domiciliar! Meu cachorro ficou super tranquilo durante toda a consulta."
+          </p>
+          <div className="review-author">
+            <span>– João P.</span>
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
 
-    <div className="review-card">
-      <p>
-        "Profissional, atenciosa e super educada. Fiquei muito satisfeita com o cuidado da minha gatinha."
-      </p>
-      <div className="review-author">
-        <span>– Camila R.</span>
-        <div className="stars">⭐⭐⭐⭐⭐</div>
-      </div>
-    </div>
-    
-    <div className="review-card">
-  <p>
-    "Atendimento impecável! A Dra. Andréia explicou tudo com muita clareza e cuidou do meu pet com um carinho enorme."
-  </p>
-  <div className="review-author">
-    <span>– Yasmin T.</span>
-    <div className="stars">⭐⭐⭐⭐⭐</div>
-  </div>
-</div>
+        <div className="review-card">
+          <p>
+            "Profissional, atenciosa e super educada. Fiquei muito satisfeita com o cuidado da minha gatinha."
+          </p>
+          <div className="review-author">
+            <span>– Camila R.</span>
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        
+        <div className="review-card">
+          <p>
+            "Atendimento impecável! A Dra. Andréia explicou tudo com muita clareza e cuidou do meu pet com um carinho enorme."
+          </p>
+          <div className="review-author">
+            <span>– Yasmin T.</span>
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
 
-
-    <div className="review-card">
-      <p>
-        "Super recomendo! Atendimento personalizado e muito carinho com meu pet."
-      </p>
-      <div className="review-author">
-        <span>– Lucas M.</span>
-        <div className="stars">⭐⭐⭐⭐⭐</div>
+        <div className="review-card">
+          <p>
+            "Super recomendo! Atendimento personalizado e muito carinho com meu pet."
+          </p>
+          <div className="review-author">
+            <span>– Lucas M.</span>
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

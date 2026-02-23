@@ -22,6 +22,7 @@ body {
 
 section {
   padding: 64px 24px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -125,6 +126,7 @@ img {
 
 .light {
   background: #faf8ff;
+  overflow-x: hidden;
 }
 
 .steps div {
@@ -995,6 +997,7 @@ h3 {
   background-color: #faf8ff;
   text-align: center;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 .reviews-section .section-title {
@@ -1005,6 +1008,16 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+/* REVIEWS FULL-WIDTH */
+.reviews-full {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  position: relative;
+  padding: 0;
+  background: transparent;
+}
+
 /* CARROSSEL */
 .reviews-carousel {
   display: flex;
@@ -1012,7 +1025,7 @@ h3 {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 1rem;
+  padding: 12px 24px;
   scroll-behavior: smooth;
 }
 
