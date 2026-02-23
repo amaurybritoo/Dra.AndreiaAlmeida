@@ -37,7 +37,8 @@ section {
 }
 
 .hero-logo {
-  max-width: 80px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   margin-bottom: 24px;
   display: block;
