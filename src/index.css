@@ -1102,13 +1102,13 @@ h3 {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 24px;
 }
 
 .gallery-item {
   position: relative;
-  height: 320px;
+  height: 450px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(124, 58, 237, 0.12);
