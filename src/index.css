@@ -139,8 +139,8 @@ img {
 }
 
 footer {
-  background: #222;
-  color: white;
+  background: #F3E8FF;
+  color: #6d28d9;
   text-align: center;
   padding: 24px;
   font-size: 14px;
@@ -412,7 +412,7 @@ footer {
 
 .appointment-info p {
   font-size: 18px;
-  color: #444;
+  color: #3F0F90;
   margin-bottom: 24px;
 }
 
@@ -427,6 +427,7 @@ footer {
 
 .appointment-form {
   background: white;
+  color:#3F0F90;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 12px 32px rgba(0,0,0,0.1);
@@ -441,12 +442,13 @@ footer {
 .form-group label {
   font-size: 14px;
   margin-bottom: 6px;
-  color: #333;
+  color: #3F0F90;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
+  color:#230853;
   padding: 14px;
   border-radius: 10px;
   border: 1px solid #ddd;
@@ -544,7 +546,7 @@ footer {
 .form-group label {
   font-size: 14px;
   margin-bottom: 6px;
-  color: #333;
+  color: #3F0F90;
 }
 
 .form-group input,
@@ -706,7 +708,7 @@ button:hover {
 
 h1, h2, h3 {
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #1f2933;
+  color: #7C3AED;
   letter-spacing: -0.5px;
 }
 
@@ -965,7 +967,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #25d366;
+  background: #7C3AED;
   color: white;
   padding: 18px 36px;
   border-radius: 50px;
