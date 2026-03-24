@@ -82,7 +82,7 @@ export default function VetDomiciliar() {
     <>
       {/* HERO */}
       <section className="hero">
-        <img src="https://i.imgur.com/RyAUTWX.png" alt="Logo Andreia Veterinária" className="hero-logo" />
+        <img src="/img/logo_final.png" alt="Logo Andreia Veterinária" className="hero-logo" />
         <h1>Cuidado veterinário no conforto da sua casa</h1>
         <p>
           Atendimento domiciliar em Manaus para pequenos animais com carinho,
@@ -105,7 +105,7 @@ export default function VetDomiciliar() {
     {/* IMAGEM À ESQUERDA */}
     <div className="about-image">
       <img
-        src="https://i.imgur.com/hLzUgId.png"
+        src="/img/moi.png"
         alt="Veterinária com cachorro"
       />
     </div>
